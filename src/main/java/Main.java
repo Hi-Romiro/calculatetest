@@ -6,13 +6,13 @@ class Main {
         System.out.println("Введите арифметическое выражение:");
         String input = scanner.nextLine();
         try {
-            System.out.println(calculate(input));
+            System.out.println(calc(input));
         } catch (Exception e) {
             System.out.println("throws Exception");
         }
     }
 
-    public static String calculate(String input) throws Exception {
+    public static String calc(String input) throws Exception {
         input = input.trim();  // лишние пробелы по бокам
         String[] tokens = input.split(" "); // разбиваем по пробелам
 
